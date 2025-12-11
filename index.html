@@ -34,58 +34,57 @@
         </p>
       </section>
 
-<!-- Ritual Setup -->
-<section class="ritual-setup" aria-labelledby="setup-heading">
-  <h2 id="setup-heading">Prepare the Ritual</h2>
+      <!-- Ritual Setup -->
+      <section class="ritual-setup" aria-labelledby="setup-heading">
+        <h2 id="setup-heading">Prepare the Ritual</h2>
 
-  <div class="setup-grid">
+        <div class="setup-grid">
+          <!-- Username -->
+          <div class="setup-box">
+            <label for="username-input" class="setup-label">Your Name</label>
+            <input type="text" id="username-input" class="setup-input" placeholder="Enter your name">
+            <p id="username-error" class="setup-error"></p>
+          </div>
 
-    <!-- Username -->
-    <div class="setup-box">
-      <label for="username-input" class="setup-label">Your Name</label>
-      <input type="text" id="username-input" class="setup-input" placeholder="Enter your name">
-      <p id="username-error" class="setup-error"></p>
-    </div>
+          <!-- Round Length -->
+          <div class="setup-box">
+            <label for="round-select" class="setup-label">Ritual Length</label>
+            <select id="round-select" class="setup-input">
+              <option value="5">Short (5 rounds)</option>
+              <option value="10" selected>Standard (10 rounds)</option>
+              <option value="15">Long (15 rounds)</option>
+            </select>
+          </div>
+        </div>
 
-    <!-- Round Length -->
-    <div class="setup-box">
-      <label for="round-select" class="setup-label">Ritual Length</label>
-      <select id="round-select" class="setup-input">
-        <option value="5">Short (5 rounds)</option>
-        <option value="10" selected>Standard (10 rounds)</option>
-        <option value="15">Long (15 rounds)</option>
-      </select>
-    </div>
-
-  </div>
-
-  <button type="button" id="start-btn" class="start-btn">Begin Ritual</button>
-</section>
+        <button type="button" id="start-btn" class="start-btn">Begin Ritual</button>
+      </section>
 
       <!-- Game Status -->
-     <section class="status-panel" aria-labelledby="status-heading">
-  <h2 id="status-heading">Ritual Status</h2>
+      <section class="status-panel" aria-labelledby="status-heading">
+        <h2 id="status-heading">Ritual Status</h2>
 
-  <div class="score-box">
-  <p class="status-label">Player</p>
-  <p class="status-value" id="player-score">0</p>
-</div>
+        <div class="status-grid">
+          <div class="score-box">
+            <p class="status-label">Player</p>
+            <p class="status-value" id="player-score">0</p>
+          </div>
 
-<div class="score-box">
-  <p class="status-label">Opponent</p>
-  <p class="status-value" id="computer-score">0</p>
-</div>
+          <div class="score-box">
+            <p class="status-label">Opponent</p>
+            <p class="status-value" id="computer-score">0</p>
+          </div>
 
-<div class="score-box">
-  <p class="status-label">Round</p>
-  <p class="status-value">
-    <span id="current-round">0</span> / <span id="max-rounds">10</span>
-  </p>
-</div>
-  </div>
-</section>
+          <div class="score-box">
+            <p class="status-label">Round</p>
+            <p class="status-value">
+              <span id="current-round">0</span> / <span id="max-rounds">10</span>
+            </p>
+          </div>
+        </div>
+      </section>
 
-       <!-- Choices -->
+      <!-- Choices -->
       <section class="choices" aria-labelledby="choices-heading">
         <h2 id="choices-heading">Choose Your Hand</h2>
         <p class="choices-hint">
@@ -100,18 +99,18 @@
         </div>
       </section>
 
-       <!-- Messages -->
-     <section class="messages" aria-live="polite" aria-atomic="true">
-  <h2 class="visually-hidden">Ritual Messages</h2>
-  <p id="round-message">Click a hand to begin the ritual.</p>
-  <p id="summary-message"></p>
-</section>
+      <!-- Messages -->
+      <section class="messages" aria-live="polite" aria-atomic="true">
+        <h2 class="visually-hidden">Ritual Messages</h2>
+        <p id="round-message">Click a hand to begin the ritual.</p>
+        <p id="summary-message"></p>
+      </section>
 
-       <!-- Controls -->
+      <!-- Controls -->
       <section class="controls">
-  <h2 class="visually-hidden">Ritual Controls</h2>
-  <button type="button" id="reset-btn" class="reset-btn">Begin New Ritual</button>
-</section>
+        <h2 class="visually-hidden">Ritual Controls</h2>
+        <button type="button" id="reset-btn" class="reset-btn">Begin New Ritual</button>
+      </section>
 
     </div>
   </main>
