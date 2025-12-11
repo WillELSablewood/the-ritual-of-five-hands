@@ -30,9 +30,37 @@
           Rock crushes Scissors and Lizard. Paper covers Rock and disproves Spock. Scissors cut Paper and decapitate Lizard. Lizard eats Paper and poisons Spock. Spock smashes Scissors and vaporises Rock.
         </p>
         <p>
-          Your goal is simple: win more rounds than the computer before the ritual ends. On Easy mode, the computer chooses moves at random. On Hard mode, it starts to learn your habits and will try to counter your favourite choices.
+          Your goal is simple: win more rounds than the computer before the ritual ends. You decide how long the ritual lasts by choosing a short, standard or long game above.
         </p>
       </section>
+
+<!-- Ritual Setup -->
+<section class="ritual-setup" aria-labelledby="setup-heading">
+  <h2 id="setup-heading">Prepare the Ritual</h2>
+
+  <div class="setup-grid">
+
+    <!-- Username -->
+    <div class="setup-box">
+      <label for="username-input" class="setup-label">Your Name</label>
+      <input type="text" id="username-input" class="setup-input" placeholder="Enter your name">
+      <p id="username-error" class="setup-error"></p>
+    </div>
+
+    <!-- Round Length -->
+    <div class="setup-box">
+      <label for="round-select" class="setup-label">Ritual Length</label>
+      <select id="round-select" class="setup-input">
+        <option value="5">Short (5 rounds)</option>
+        <option value="10" selected>Standard (10 rounds)</option>
+        <option value="15">Long (15 rounds)</option>
+      </select>
+    </div>
+
+  </div>
+
+  <button type="button" id="start-btn" class="start-btn">Begin Ritual</button>
+</section>
 
       <!-- Game Status -->
      <section class="status-panel" aria-labelledby="status-heading">

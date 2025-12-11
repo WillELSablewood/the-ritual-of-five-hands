@@ -102,6 +102,73 @@ h2 {
   margin-top: 0.5rem;
 }
 
+.ritual-setup {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  margin-top: 1rem;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--color-border);
+}
+
+.setup-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+.setup-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.setup-label {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.setup-input {
+  padding: 0.6rem;
+  background: #0f172a;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  color: var(--color-text);
+}
+
+.setup-input:focus-visible {
+  outline: 2px solid var(--color-accent-soft);
+}
+
+.setup-error {
+  color: var(--color-danger);
+  font-size: 0.85rem;
+  height: 1rem;
+}
+
+.start-btn {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #22c55e, #15803d);
+  border: none;
+  border-radius: var(--radius-lg);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.1s ease;
+}
+
+.start-btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .setup-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Status grid */
 
 .status-grid {
