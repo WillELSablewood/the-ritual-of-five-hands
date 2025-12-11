@@ -105,16 +105,15 @@ h2 {
 /* Status grid */
 
 .status-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem; 
 }
 
 .score-box {
-  padding: var(--spacing-sm);
-  border-radius: 0.75rem;
-  border: 1px solid var(--color-border);
-  background: linear-gradient(135deg, #020617, #111827);
+  flex: 1;            
+  text-align: center;   
 }
 
 .status-label {
