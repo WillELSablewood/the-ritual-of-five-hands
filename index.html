@@ -66,23 +66,22 @@
      <section class="status-panel" aria-labelledby="status-heading">
   <h2 id="status-heading">Ritual Status</h2>
 
-  <div class="status-grid">
-    <div class="score-box" aria-label="Player score">
-      <p class="status-label">Player</p>
-      <p class="status-value" id="player-score">0</p>
-    </div>
+  <div class="score-box">
+  <p class="status-label">Player</p>
+  <p class="status-value" id="player-score">0</p>
+</div>
 
-    <div class="score-box" aria-label="Computer score">
-      <p class="status-label">Opponent</p>
-      <p class="status-value" id="computer-score">0</p>
-    </div>
+<div class="score-box">
+  <p class="status-label">Opponent</p>
+  <p class="status-value" id="computer-score">0</p>
+</div>
 
-    <div class="score-box" aria-label="Round number">
-      <p class="status-label">Round</p>
-      <p class="status-value">
-        <span id="current-round">0</span> / <span id="max-rounds">10</span>
-      </p>
-    </div>
+<div class="score-box">
+  <p class="status-label">Round</p>
+  <p class="status-value">
+    <span id="current-round">0</span> / <span id="max-rounds">10</span>
+  </p>
+</div>
   </div>
 </section>
 
@@ -102,15 +101,17 @@
       </section>
 
        <!-- Messages -->
-      <section class="messages" aria-live="polite" aria-atomic="true">
-        <p id="round-message">Click a hand to begin the ritual.</p>
-        <p id="summary-message"></p>
-      </section>
+     <section class="messages" aria-live="polite" aria-atomic="true">
+  <h2 class="visually-hidden">Ritual Messages</h2>
+  <p id="round-message">Click a hand to begin the ritual.</p>
+  <p id="summary-message"></p>
+</section>
 
        <!-- Controls -->
       <section class="controls">
-        <button type="button" id="reset-btn" class="reset-btn">Begin New Ritual</button>
-      </section>
+  <h2 class="visually-hidden">Ritual Controls</h2>
+  <button type="button" id="reset-btn" class="reset-btn">Begin New Ritual</button>
+</section>
 
     </div>
   </main>
