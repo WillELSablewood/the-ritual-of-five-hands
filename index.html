@@ -9,13 +9,101 @@
   </head>
 
 <body>
-    
+
     <header class="site-header">
     <div class="container">
       <h1>The Ritual of Five Hands</h1>
       <p class="tagline">A five-sign duel of chance, pattern and intent.</p>
     </div>
   </header>
+
+  <main class="site-main">
+    <div class="container">
+
+      <!-- How to Play -->
+      <section class="intro" aria-labelledby="how-to-play-heading">
+        <h2 id="how-to-play-heading">How to Play</h2>
+        <p>
+          The Ritual of Five Hands is based on the expanded Rock, Paper, Scissors, Lizard, Spock ruleset. Each round, you and the computer each choose one of five symbolic moves: Rock, Paper, Scissors, Lizard or Spock.
+        </p>
+        <p>
+          Rock crushes Scissors and Lizard. Paper covers Rock and disproves Spock. Scissors cut Paper and decapitate Lizard. Lizard eats Paper and poisons Spock. Spock smashes Scissors and vaporises Rock.
+        </p>
+        <p>
+          Your goal is simple: win more rounds than the computer before the ritual ends. On Easy mode, the computer chooses moves at random. On Hard mode, it starts to learn your habits and will try to counter your favourite choices.
+        </p>
+      </section>
+
+      <!-- Game Status -->
+      <section class="status-panel" aria-labelledby="status-heading">
+        <h2 id="status-heading">Ritual Status</h2>
+        <div class="status-grid">
+          <div class="score-box" aria-label="Player score">
+            <p class="status-label">Player</p>
+            <p class="status-value" id="player-score">0</p>
+          </div>
+          <div class="score-box" aria-label="Computer score">
+            <p class="status-label">Opponent</p>
+            <p class="status-value" id="computer-score">0</p>
+          </div>
+          <div class="score-box" aria-label="Round number">
+            <p class="status-label">Round</p>
+            <p class="status-value">
+              <span id="current-round">0</span> / <span id="max-rounds">10</span>
+            </p>
+          </div>
+          <div class="score-box">
+            <label class="status-label" for="difficulty-select">Difficulty</label>
+            <select id="difficulty-select" name="difficulty">
+              <option value="easy">Easy</option>
+              <option value="hard">Hard</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+       <!-- Choices -->
+      <section class="choices" aria-labelledby="choices-heading">
+        <h2 id="choices-heading">Choose Your Hand</h2>
+        <p class="choices-hint">
+          Select one of the five hands to invoke your move for this round.
+        </p>
+        <div class="choices-grid">
+          <button type="button" class="choice-btn" data-choice="rock">Rock</button>
+          <button type="button" class="choice-btn" data-choice="paper">Paper</button>
+          <button type="button" class="choice-btn" data-choice="scissors">Scissors</button>
+          <button type="button" class="choice-btn" data-choice="lizard">Lizard</button>
+          <button type="button" class="choice-btn" data-choice="spock">Spock</button>
+        </div>
+      </section>
+
+       <!-- Messages -->
+      <section class="messages" aria-live="polite" aria-atomic="true">
+        <p id="round-message">Click a hand to begin the ritual.</p>
+        <p id="summary-message"></p>
+      </section>
+
+       <!-- Controls -->
+      <section class="controls">
+        <button type="button" id="reset-btn" class="reset-btn">Begin New Ritual</button>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>The Ritual of Five Handsa front-end strategy game built with HTML, CSS and JavaScript.</p>
+      <p>
+        <a href="https://github.com/YOUR-USERNAME/the-ritual-of-five-hands" target="_blank" rel="noopener">
+          View the project on GitHub
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript will be linked here in Phase 2 -->
+  <!-- <script src="assets/js/script.js"></script> -->
 
 </body>
 </html>
